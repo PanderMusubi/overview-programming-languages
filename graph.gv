@@ -1,0 +1,90 @@
+digraph "programming-languages" {
+layout="fdp"
+
+labelloc=t
+fontname="Helvetica Bold"
+fontsize=16
+label="High-Level Multi-Paradigm Programming Languages which are Procedural and Object-Orientated\n\n"
+layers="e:n"
+node [fontname="Helvetica Bold" shape=box color="#CC0404" fontcolor=white style="filled" fontsize=10 fixedsize=true width=1.5 height=.8 layer="n" ]
+edge [color="#CC0404" arrowhead="none" penwidth=2 layer="e" ]
+
+class           [color="#BB4444" label="class-based\nlanguage" ]
+aspect          [color="#BB4444" label="aspect-oriented\nlanguage" ]
+prototype       [color="#BB4444" label="prototype-based\nlanguage" ]
+class           -> cpp [color="#BB4444" ]
+class           -> csharp [color="#BB4444" ]
+class           -> delphi [color="#BB4444" ]
+class           -> java [color="#BB4444" ]
+class           -> perl [color="#BB4444" ]
+class           -> php [color="#BB4444" ]
+class           -> python [color="#BB4444" ]
+class           -> ruby [color="#BB4444" ]
+class           -> tcl [color="#BB4444" ]
+aspect          -> python [color="#BB4444" ]
+aspect          -> ruby [color="#BB4444" ]
+prototype       -> javascript [color="#BB4444" ]
+
+compiled        [color="#44BB44" label="compiled\nlanguage" ]
+interpreted     [color="#44BB44" label="interpreted\nlanguage" ]
+bytecode        [color="#44BB44" label="bytecode\nlanguage" ]
+compiled        -> cpp [color="#44BB44" ]
+compiled        -> delphi [color="#44BB44" ]
+bytecode        -> csharp [color="#44BB44" ]
+bytecode        -> java [color="#44BB44" ]
+bytecode        -> python [color="#44BB44" ]
+bytecode        -> ruby [color="#44BB44" ]
+interpreted     -> javascript [color="#44BB44" ]
+interpreted     -> perl [color="#44BB44" ]
+interpreted     -> php [color="#44BB44" ]
+interpreted     -> tcl [color="#44BB44" ]
+
+generic         [color="#4444BB" label="generic\nlanguage" ]
+generic         -> cpp [color="#4444BB" ]
+generic         -> csharp [color="#4444BB" ]
+generic         -> delphi [color="#4444BB" ]
+generic         -> java [color="#4444BB" ]
+generic         -> perl [color="#4444BB" ]
+
+eventdriven     [color="#BB44BB" label="event-driven\nlanguage" ]
+eventdriven     -> csharp [color="#BB44BB" ]
+eventdriven     -> delphi [color="#BB44BB" ]
+eventdriven     -> tcl [color="#BB44BB" ]
+
+iterative       [color="#BBBB44" label="iterative\nlanguage" ]
+iterative       -> csharp [color="#BBBB44" ]
+iterative       -> python [color="#BBBB44" ]
+iterative       -> ruby [color="#BBBB44" ]
+iterative       -> tcl [color="#BBBB44" ]
+
+metaprogramming [color="#44BBBB" label="metaprogramming\nlanguage" ]
+metaprogramming -> cpp [color="#44BBBB" ]
+metaprogramming -> perl [color="#44BBBB" ]
+metaprogramming -> php [color="#44BBBB" ]
+metaprogramming -> python [color="#44BBBB" ]
+metaprogramming -> ruby [color="#44BBBB" ]
+metaprogramming -> tcl [color="#44BBBB" ]
+
+interactive     [color="#BBBBBB" label="interactive\nlanguage" ]
+interactive     -> perl [color="#BBBBBB" ]
+interactive     -> python [color="#BBBBBB" ]
+interactive     -> ruby [color="#BBBBBB" ]
+interactive     -> tcl [color="#BBBBBB" ]
+
+concurrent      [color="#444444" label="concurrent\nlanguage" ]
+concurrent      -> java [color="#444444" ]
+
+cpp        [style="filled,rounded" color="#D3A950" width=1.620 height=1.475        label="C++\nstrong\lunsafe\lexplicit\lstatic \lname-based    \lunsafe I/O\l"]
+csharp     [style="filled,rounded" color="#D3A950" width=1.620 height=1.475         label="C#\nstrong\lsafe  \lexplicit\lstatic \lname-based    \lfailsafe I/O\l" ]
+delphi     [style="filled,rounded" color="#D3A950" width=1.620 height=1.475     label="Delphi\nstrong\lunsafe\lexplicit\lstatic \lname-based    \lunsafe I/O\l" ]
+javascript [style="filled,rounded" color="#D3A950" width=1.620 height=1.475 label="JavaScript\nweak  \lunsafe\limplicit\ldynamic\l              \lunsafe I/O\l" ]
+java       [style="filled,rounded" color="#D3A950" width=1.620 height=1.475       label="Java\nstrong\lsafe  \lexplicit\lstatic \lname-based    \lfailsafe I/O\l" ]
+perl       [style="filled,rounded" color="#D3A950" width=1.620 height=1.475       label="Perl\nweak  \lunsafe\limplicit\ldynamic\l              \lunsafe I/O\l" ]
+php        [style="filled,rounded" color="#D3A950" width=1.620 height=1.475        label="PHP\nweak  \lunsafe\limplicit\ldynamic\l              \lfailsafe I/O\l" ]
+python     [style="filled,rounded" color="#D3A950" width=1.620 height=1.475     label="Python\nstrong\lsafe  \limplicit\ldynamic\lproperty-based\lfailsafe I/O\l" ]
+ruby       [style="filled,rounded" color="#D3A950" width=1.620 height=1.475       label="Ruby\nstrong\lsafe  \limplicit\ldynamic\l              \lfailsafe I/O\l" ]
+tcl        [style="filled,rounded" color="#D3A950" width=1.620 height=1.475        label="Tcl\nweak  \lunsafe\limplicit\ldynamic\l              \lunsafe I/O\l" ]
+
+legend [style="filled,rounded" color="#D3A950" width=1.620 height=1.475 fontname="Helvetica Bold Italic" label="name\ntype strength\ltype safety\ltype expression\ltype checking\ltype compatibility\lsystem call exception\l"]
+
+}
